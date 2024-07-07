@@ -7,9 +7,9 @@ import { Subject } from "rxjs";
 @Injectable()
 export class RecipeService {
   recipesChanged = new Subject<Recipe[]>();
-  private recipes: Recipe[] = [];
+  //private recipes: Recipe[] = [];
 
-  /*private recipes: Recipe[] = [
+  private recipes: Recipe[] = [
     new Recipe('Tasty Schnitzel', 'A super-tasty-schnitzel - just awesome',
     'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
     [
@@ -22,7 +22,7 @@ export class RecipeService {
       new Ingredient('Buns', 2),
       new Ingredient('Meat', 1)
     ])
-  ];*/
+  ];
 
   constructor(private shoppingListService: ShoppingListService) {}
 
